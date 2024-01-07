@@ -5,13 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            sm: "640px",
+            md: "768px",
+            lg: "1024px",
+            xl: "1280px",
+            "2xl": "1536px",
+            pepito: "1300px",
+          },
+          extend: {
+            colors: {
+              green: {
+                100: "#27ae60",
+                200: "",
+              },
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body>
     <main class="p-12 md:p-24 dark:bg-slate-800">
       <h1 class="text-5xl md:text-3xl font-bold underline mb-4 dark:text-white">
         Hello world!
       </h1>
-      <a href="" class="bg-red-600 px-12 py-2 hover:bg-red-900 hover:text-white"
+      <a
+        href=""
+        class="bg-green-100 px-12 py-2 hover:bg-red-900 hover:text-white"
         >Click</a
       >
     </main>
